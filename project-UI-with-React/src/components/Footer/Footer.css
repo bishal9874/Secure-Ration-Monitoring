@@ -1,0 +1,149 @@
+/* .f_wraper{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: var(--black);
+}
+.f_img{
+    display: flex;
+    flex-direction: column;
+    
+}
+.f_para{
+    color: beige;
+    font-size: medium;
+    justify-content: start;
+
+}
+
+
+.f_quick{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+} */
+
+.body {
+  
+    display: flex;
+    width: 100%;
+    height: 320px;
+    
+  }
+  footer {
+    background-color: #242d49;
+    color: #a7a7a7;
+    font-size: 16px;
+    
+    text-align: justify;
+  }
+  footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .row {
+    padding: 1em 1em;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+    margin-top: 30px;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  .Some{
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #2a8ded;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+  input,
+  .inputButton {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .socialIcons>img{
+    height: 50px;
+    width: 50px;
+    
+  }
+  .social i {
+    color: #bac6d9;
+  }
+  
+  .copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+  }
+  .footer-menu{
+    
+      margin-top: auto;
+      text-align: center;
+      font-size: larger;
+      
+      
+  }
+  
+  .footer-menu a{
+    color: #cfd2d6;
+    padding: 6px;
+  
+    text-decoration: none;
+  }
+  .footer-menu a:hover{
+    color: #27bcda;
+  }
+  .copyright p {
+    font-size: 0.9em;
+    text-align: right;
+  }
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  
+  }

@@ -1,0 +1,40 @@
+
+.userkyc_form{
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+
+}
+.paddings.flexCenter.innerWidth.uk-container{
+gap: 1rem;
+
+}
+.inputConatiner{
+  width: 100%;
+}
+
+.flexCenter.u-header{
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding: 10px;
+}
+
+.select-field {
+  margin-bottom: 1rem;
+}
+
+.field-gap {
+  margin: 0.2rem;
+}
+.inputConatiner{
+ display: flex;
+ flex-direction: row;
+ gap: 1rem;
+}
+/* @media  (max-width: 640px) {
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+} */

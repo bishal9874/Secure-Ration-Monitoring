@@ -1,0 +1,7 @@
+.c-image-container{
+    width: 35rem;
+    height: 35rem;
+    overflow: hidden;
+   
+    border: 8px solid rgba(255,255,255,0.12);
+}

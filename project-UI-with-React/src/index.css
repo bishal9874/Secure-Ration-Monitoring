@@ -1,0 +1,147 @@
+:root {
+  --primary: #1f3e72;
+  --secondary: rgba(255, 255, 255, 0.78);
+  --black: #131110;
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --purple-orange-gradient: linear-gradient(270deg, #2711e9 0%, #ff922d 100%);
+  --blue: #4066ff;
+  --lightBlue: #eeeeff;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+
+
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: #FF919D;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.paddings {
+  padding: 1.5rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.primaryText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
+}
+.orangeText {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button{
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+ 
+
+
+}
+.contactTitle{
+  color: orangered;
+  font-size: 3rem;
+  font-weight: 500;
+
+}
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "Secure-Ration-Backend"]
+	path = Secure-Ration-Backend
+	url = https://github.com/bishal9874/Secure-Ration-Backend.git
+[submodule "project-UI-with-React"]
+	path = project-UI-with-React
+	url = https://github.com/bishal9874/project-UI-with-React.git

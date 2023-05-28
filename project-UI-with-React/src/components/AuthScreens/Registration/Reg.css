@@ -1,0 +1,43 @@
+
+.login_butt{
+  color: crimson;
+}
+.paddings.flexCenter.innerWidth.r-container{
+  gap: 5rem;
+  
+}
+/* .r-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width:100%;
+  height: 20%;
+  background-image: url("/media/bishal/2E0CE2610CE22415/new project file/secure-ration/src/assets/bottom.png");
+  background-size: cover;
+  background-position: center;
+} */
+  
+ 
+
+  @media only screen and (max-width: 620px) {
+    .inputs_container input{
+        width: 100%;
+    }
+    .login_button{
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-height: 670px) {
+    .subtitle {
+      margin-bottom: 2rem;
+    }
+    .title{
+      width: 100%;
+    }
+  
+    .small {
+      margin-bottom: 3rem;
+    }
+  }

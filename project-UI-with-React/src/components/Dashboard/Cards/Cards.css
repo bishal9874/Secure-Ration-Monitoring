@@ -1,0 +1,144 @@
+.l_Cards {
+  display: flex;
+  border-radius: 0.7rem;
+  background: linear-gradient(rgb(255, 255, 255), rgba(223, 221, 223, 0.8));
+  backdrop-filter: blur(80%);
+  padding: 1rem;
+  position: relative;
+  width: 350px;
+  height: 150px;
+  
+}
+.d-Wraper{
+  margin-top: 20px;
+}
+.lcard{
+  margin: 17px;
+}
+.R_Cards {
+  display: flex;
+  border-radius: 0.7rem;
+  /* background: linear-gradient(rgb(255, 255, 255), rgba(223, 221, 223, 0.8)); */
+  background: url("src/assets/illutration2.jpg");
+  background-size:300px;
+  backdrop-filter: blur(80%);
+  padding: 1rem;
+  position: relative;
+  width: 400px;
+  height: 150px;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+/* .R_Cards:hover {
+  transform: scale(1.2);
+} */
+.rcard{
+  margin-top: 26px;
+}
+.profileImage {
+  border-radius: 10px;
+  height: 150px;
+  width: 130px;
+  justify-content: center;
+  margin: 20px;
+  
+}
+
+
+
+.parentContainer{
+  width: 100%;
+}
+.d-Wraper{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.CompactCard {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  height: 7rem !important;
+  
+}
+.CompactCard:hover {
+  box-shadow: none !important;
+}
+.address{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.location:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+}
+.location {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.location::after {
+  content: "Double Click to view location";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+  background-color: #d3c6c6;
+  color: #000000;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.location:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.buttonhovering{
+  position: relative;
+  cursor: pointer;
+}
+.buttonhovering::after{
+  content: "Double click to changed Password";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+  background-color: #d3c6c6;
+  color: #000000;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.buttonhovering:hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 1200px) {
+  .d-Wraper{
+    flex-direction: column;
+  }
+  .parentContainer{
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Cards{
+    width: 90%;
+  }
+}
